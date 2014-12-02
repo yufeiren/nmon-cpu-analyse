@@ -31,3 +31,17 @@ Generally, there are 4 steps.
 
 6. analyse CPU consumption with SQL script
 
+nmon installation
+-----------------
+
+yum install -y ncurses ncurses-devel
+
+wget http://sourceforge.net/projects/nmon/files/makefile/download
+wget http://sourceforge.net/projects/nmon/files/lmon14i.c
+
+mv lmon14i.c lmon.c
+
+make nmon_x86_rhel52
+
+root # mv nmon_x86_rhel52 /usr/local/bin/nmon
+
